@@ -1,4 +1,5 @@
 version: '3.9'
+
 services:
   app:
     build:
@@ -10,4 +11,4 @@ services:
     volumes:
       - ./app
     command: >
-      sh -c "python manahe.py runserver 0.0.0.0:8000"
+      sh -c "python manage.py runserver 0.0.0.0:8000"
